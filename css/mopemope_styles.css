@@ -1,0 +1,45 @@
+body {
+    background-image: url('../img/normal.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-group label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.form-control {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.align-middle {
+    display: flex;
+    align-items: center;
+}
+
+.gap {
+    margin-bottom: 20px;
+}

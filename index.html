@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mopemope Calculator</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mopemope_styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center mb-4">
+                <img src="img/Calculator_transparent.png" alt="Logo" class="img-fluid logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="form-group">
+                    <label for="input1">Enter your 1st Number</label>
+                    <input type="number" class="form-control" id="input1">
+                </div>
+            </div>
+        </div>
+        <div class="row gap">
+            <div class="col-md-6 offset-md-3">
+                <div class="form-group">
+                    <label for="input2">Enter your 2nd Number</label>
+                    <input type="number" class="form-control" id="input2">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose your operator here</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" onclick="setOperation('addition')">Addition</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="setOperation('subtraction')">Subtraction</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="setOperation('multiplication')">Multiplication</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="setOperation('division')">Division</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gap">
+            <div class="col-md-6 offset-md-3 text-center">
+                <button class="btn btn-primary" onclick="calculate()">Calculate</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/mopemope_script.js"></script>
+</body>
+</html>
